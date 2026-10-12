@@ -1,0 +1,212 @@
+[ 
+ 
+{ 
+"title"    : "Refreshing my coding ... to beyond where I was.", 
+"desc"     : "Refreshing my coding ... to beyond where I was.", 
+"category" : "", 
+"url"      : "/2025-10-02-python-in-depth/", 
+"date"     : "October  2, 2025" 
+}, 
+ 
+{ 
+"title"    : "Active and Passive cooling options in Windows are hidden behind a registry flag, because Windows hates its users.", 
+"desc"     : "Active and Passive cooling options in Windows are hidden behind a registry flag, because Windows hates its users.", 
+"category" : "", 
+"url"      : "/2025-08-17-why-is-windows-like-this/", 
+"date"     : "August 17, 2025" 
+}, 
+ 
+{ 
+"title"    : "... Nextcloud on Windows can be annoying with spaces in the front of your files sometimes. But you can fix it!", 
+"desc"     : "... Nextcloud on Windows can be annoying with spaces in the front of your files sometimes. But you can fix it!", 
+"category" : "", 
+"url"      : "/2025-07-13-automate-renaming-your-files/", 
+"date"     : "July 13, 2025" 
+}, 
+ 
+{ 
+"title"    : "I bought a minibook X as a laptop. It&#39;s tiny. I love it.", 
+"desc"     : "I bought a minibook X as a laptop. It&#39;s tiny. I love it.", 
+"category" : "", 
+"url"      : "/2025-06-27-the-minibook/", 
+"date"     : "June 27, 2025" 
+}, 
+ 
+{ 
+"title"    : "Oh no! Once again a file is not the right format.", 
+"desc"     : "Oh no! Once again a file is not the right format.", 
+"category" : "", 
+"url"      : "/2025-05-22-adjusting-wav-files/", 
+"date"     : "May 22, 2025" 
+}, 
+ 
+{ 
+"title"    : "Sabbatical", 
+"desc"     : "Sabbatical", 
+"category" : "website", 
+"url"      : "/2025-01-07-sabbatical/", 
+"date"     : "January  7, 2025" 
+}, 
+ 
+{ 
+"title"    : "Updating Beautiful Jekyll", 
+"desc"     : "Updating Beautiful Jekyll", 
+"category" : "website", 
+"url"      : "/2024-05-26-updating-beautiful-jekyll/", 
+"date"     : "May 26, 2024" 
+}, 
+ 
+{ 
+"title"    : "Realtime audio on Linux? It&#39;s actually not that bad if you know the secret invocations!", 
+"desc"     : "Realtime audio on Linux? It&#39;s actually not that bad if you know the secret invocations!", 
+"category" : "music, code, tech", 
+"url"      : "/2024-02-08-jack-on-linux/", 
+"date"     : "February  8, 2024" 
+}, 
+ 
+{ 
+"title"    : "Assorted thoughts on Windows ARM, starring the Lenovo 10W", 
+"desc"     : "Assorted thoughts on Windows ARM, starring the Lenovo 10W", 
+"category" : "laptops, technology, gas", 
+"url"      : "/2024-01-14-windows-arm-in-2024/", 
+"date"     : "January 14, 2024" 
+}, 
+ 
+{ 
+"title"    : "Desktop Linux will never be usable as a stress-free daily driver", 
+"desc"     : "Desktop Linux will never be usable as a stress-free daily driver", 
+"category" : "tech, hidpi", 
+"url"      : "/2023-06-09-desktop-linux-sucks/", 
+"date"     : "June  9, 2023" 
+}, 
+ 
+{ 
+"title"    : "The tech you use doesn&#39;t really matter", 
+"desc"     : "The tech you use doesn&#39;t really matter", 
+"category" : "code, tech, humanity", 
+"url"      : "/2023-01-11-tech-doesnt-matter/", 
+"date"     : "January 11, 2023" 
+}, 
+ 
+{ 
+"title"    : "Setting up REAPER on Linux - why, how, and assorted thoughts.", 
+"desc"     : "Setting up REAPER on Linux - why, how, and assorted thoughts.", 
+"category" : "music, code, tech", 
+"url"      : "/2022-08-05-music-on-linux/", 
+"date"     : "August  5, 2022" 
+}, 
+ 
+{ 
+"title"    : "jq to sort tags into CSV within AWS output.", 
+"desc"     : "jq to sort tags into CSV within AWS output.", 
+"category" : "jq, code, tech", 
+"url"      : "/2021-07-10-jq/", 
+"date"     : "July 10, 2021" 
+}, 
+ 
+{ 
+"title"    : "Back into devops, I guess.", 
+"desc"     : "Back into devops, I guess.", 
+"category" : "job, balance", 
+"url"      : "/2021-07-09-back-in-devops/", 
+"date"     : "July  9, 2021" 
+}, 
+ 
+{ 
+"title"    : "New beginnings and what&#39;s next", 
+"desc"     : "New beginnings and what&#39;s next", 
+"category" : "music, usefulness, creation", 
+"url"      : "/2020-12-18-new-beginnings/", 
+"date"     : "December 18, 2020" 
+}, 
+ 
+{ 
+"title"    : "On COVID", 
+"desc"     : "On COVID", 
+"category" : "coronavirus, hope", 
+"url"      : "/2020-10-08-on-COVID/", 
+"date"     : "October  8, 2020" 
+}, 
+ 
+{ 
+"title"    : "A new game!", 
+"desc"     : "A new game!", 
+"category" : "intro, blog, games, writing, twine", 
+"url"      : "/2020-08-08-another-game/", 
+"date"     : "August  8, 2020" 
+}, 
+ 
+{ 
+"title"    : "On the game of submitting writing", 
+"desc"     : "On the game of submitting writing", 
+"category" : "intro, blog, games, writing", 
+"url"      : "/2020-01-31-submitting-work/", 
+"date"     : "January 31, 2020" 
+}, 
+ 
+{ 
+"title"    : "A new game!", 
+"desc"     : "A new game!", 
+"category" : "intro, blog, games, writing, twine", 
+"url"      : "/2019-11-18-new-game/", 
+"date"     : "November 18, 2019" 
+}, 
+ 
+{ 
+"title"    : "It&#39;s raining recently, so just a picture of it all. :)", 
+"desc"     : "It&#39;s raining recently, so just a picture of it all. :)", 
+"category" : "", 
+"url"      : "/2019-10-05-rain_pictures/", 
+"date"     : "October  5, 2019" 
+}, 
+ 
+ 
+{ 
+"title"    : "About me", 
+"desc"     : "About me", 
+"category" : "page", 
+"url"      : "/aboutme/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Iris Felshman", 
+"desc"     : "Iris Felshman", 
+"category" : "page", 
+"url"      : "/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Tag Index", 
+"desc"     : "Tag Index", 
+"category" : "page", 
+"url"      : "/tags/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Iris Felshman", 
+"desc"     : "Iris Felshman", 
+"category" : "page", 
+"url"      : "/page2/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Iris Felshman", 
+"desc"     : "Iris Felshman", 
+"category" : "page", 
+"url"      : "/page3/", 
+"date"     : "January 1, 1970" 
+}, 
+ 
+{ 
+"title"    : "Iris Felshman", 
+"desc"     : "Iris Felshman", 
+"category" : "page", 
+"url"      : "/page4/", 
+"date"     : "January 1, 1970" 
+} 
+ 
+]

@@ -2,15 +2,15 @@
 
 :root {
   /* config file CSS variables */
-  --page-col: #FFFFFF;
+  --page-col: #e5d3e7;
   --text-col: #404040;
   --link-col: #008AFF;
   --hover-col: #0085A1;
-  --navbar-col: #EAEAEA;
-  --navbar-text-col: #404040;
-  --navbar-border-col: #DDDDDD;
-  --footer-col: #EAEAEA;
-  --footer-text-col: #777777;
+  --navbar-col: #F5F5F5;
+  --navbar-text-col: #5A4FCF;
+  --navbar-border-col: #F5F5F5;
+  --footer-col: #F5F5F5;
+  --footer-text-col: #5A4FCF;
   --footer-link-col: #404040;
   --footer-hover-col: #0085A1;
 
@@ -425,7 +425,10 @@ footer a:focus {
 footer .list-inline {
   margin: 0;
   padding: 0;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.375rem;
+}
+footer .list-inline .list-inline-item {
+  margin-bottom: 0.5rem;
 }
 footer .copyright {
   font-family: var(--header-font);
@@ -816,6 +819,8 @@ nav.top-nav-short-permanent ~ header > .intro-header.big-img {
 
 table {
   padding: 0;
+  overflow-x: auto;
+  display: block;
 }
 table tr {
   border-top: 1px solid #cccccc;
@@ -922,10 +927,6 @@ pre {
 #social-share-section {
   margin-bottom: 1.875rem;
   margin-top: 1.875rem;
-}
-
-#social-share-section a {
-  color: #fff;
 }
 
 /* --- Notification boxes --- */

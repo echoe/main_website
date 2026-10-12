@@ -1,193 +1,299 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-10-11T21:43:09-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Iris Felshman’s personal website</title><subtitle>A personal portfolio site for Iris Felshman.</subtitle><entry><title type="html">Refreshing my coding … to beyond where I was.</title><link href="http://localhost:4000/2025/10/02/python-in-depth.html" rel="alternate" type="text/html" title="Refreshing my coding … to beyond where I was." /><published>2025-10-02T00:00:00-05:00</published><updated>2025-10-02T00:00:00-05:00</updated><id>http://localhost:4000/2025/10/02/python-in-depth</id><content type="html" xml:base="http://localhost:4000/2025/10/02/python-in-depth.html"><![CDATA[<p>When I was out of my first tech job, because they were bought, I took a python course. This is the spring of 2016. After that, I became basically the ‘Python expert’ in the team that I joined, and wrote a lot of scripts - including an RPM, and a refactoring of a very complex monitoring program into its constituent parts.
-Since then - for eight years? - I’ve felt like I’ve been very good at coding. Like - I was not a developer, but I also wasn’t chopped liver, you know? It was an extra skill, something I could lean on when I was having issues. But it wasn’t something I was perfect at. I didn’t really make programs for other people - I’d make them to run via cron, or for my own personal use, with the output being through a terminal.</p>
-
-<p>After my sabbatical, I started applying to jobs again. And it made me realize something - I need to be better at coding. Not to replace the ops-first mindset that I have, but to be able to go into it, when I need to do something more involved.</p>
-
-<p>And so, I went back to learn.</p>
-
-<p>I’m 40 days into it now - going slowly, and letting myself fully comprehend and explore the problems I’m going through - and I can feel myself getting better at it.
-There’s a lot that I just wasn’t using - list comprehensions, for instance - or graphics, in general! - and there were things that I used but was a bit reticient to do so. It’s just always, tautologically speaking, simpler to do the simple thing.
-But I’m rewriting my brain a little bit - just to give it an extra gear when needed, and make picking up further programming languages easier. If I have a little time - why not make something make more sense? Do I need to write four if statements when I can loop through and resolve things with one elegant line of “more correct” code?</p>
-
-<p>I put this second part to the test - I’d tried to write some Go code at my previous job but ended up being unable to write the terraform module I was looking at within a week, trying to go faster and faster and just missing parts of the language. So I came back, and I went, “Let’s write something that duplicates this python script, and just makes an API request.”
-It was frustrating to figure everything out. I ran into a bunch of bugs - errors with formatting, or the way the JSON object was accepted, or even the difference between httpget and httprequest(“GET”). But I was able, actually, to discern those things. I’m now more able to actually see what the problems are. And at the end of the day, I made my API request, and it was properly accepted.</p>
-
-<p>I don’t know if this is just because I successfully got out of the burnout I had a little over a year ago, or if I just gave myself the information required, or even if the object was just that substantially different. But it feels good.</p>
-
-<p>And I’ll be attempting making that terraform module again at some point, I’m sure. :)</p>
-
-<p>You can’t build something that stands for a long time on sand. You’ve got to build the foundation first, and the things that stand on the foundation after.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[When I was out of my first tech job, because they were bought, I took a python course. This is the spring of 2016. After that, I became basically the ‘Python expert’ in the team that I joined, and wrote a lot of scripts - including an RPM, and a refactoring of a very complex monitoring program into its constituent parts. Since then - for eight years? - I’ve felt like I’ve been very good at coding. Like - I was not a developer, but I also wasn’t chopped liver, you know? It was an extra skill, something I could lean on when I was having issues. But it wasn’t something I was perfect at. I didn’t really make programs for other people - I’d make them to run via cron, or for my own personal use, with the output being through a terminal.]]></summary></entry><entry><title type="html">Active and Passive cooling options in Windows are hidden behind a registry flag, because Windows hates its users.</title><link href="http://localhost:4000/2025/08/17/why-is-windows-like-this.html" rel="alternate" type="text/html" title="Active and Passive cooling options in Windows are hidden behind a registry flag, because Windows hates its users." /><published>2025-08-17T00:00:00-05:00</published><updated>2025-08-17T00:00:00-05:00</updated><id>http://localhost:4000/2025/08/17/why-is-windows-like-this</id><content type="html" xml:base="http://localhost:4000/2025/08/17/why-is-windows-like-this.html"><![CDATA[<p>It’s been a minute! … I found something frustrating about windows, and NixOS, so figured I’d make a post.</p>
-
-<p>For Windows: in another episode of ‘Posting about bullshit I’ve found out on the internet’, Windows has an option to reduce fan noise built into it.
-As someone who really, really cares about fan noise, this is absolutely massive???
-It’s mentioned here:</p>
-
-<p>https://learn.microsoft.com/en-us/windows-hardware/drivers/kernel/passive-and-active-cooling-modes</p>
-
-<p>To enable seeing it as an option, though, you have to edit the Windows Registry like this:</p>
-
-<p>https://www.tenforums.com/tutorials/107953-add-remove-system-cooling-policy-power-options-windows.html</p>
-
-<p>I did this tweak and my laptop simply stopped doing the fan noise hiss at me. That’s all I really want. Why is this so difficult to get otherwise?!?! And why is this option /hidden/?? Seriously???</p>
-
-<p>… Windows is … exasperating sometimes. But MacOS charges so much for storage that I’ve started to get used to Windows again.</p>
-
-<p>Also, I had an issue with my NixOS install - the keyring was not unlocking. … I ended up just tempirarily installing seahorse (a utility to edit keyrings) and just setting the keyring blank, because this is not a computer that I am worried about people grabbing secrets from (I use it to stream to twitch, record youtube videos, and nothing else: if you have physical access, I am having a severe problem, and if you have access via the internet, I also am having a severe problem). Before this, I would open Nextcloud, and it would tell me I haven’t logged in before. And when I attempted to log in, it would pop up a keyring password question. I didn’t know the keyring password - it’s not the computer password - and it wouldn’t fail to doing nothing. So I had to … restart … to avoid the keyring password dialog box.</p>
-
-<p>……..</p>
-
-<p>Anyways, it’s resolved now. I suppose I could’ve also opened up a terminal-only Linux screen with alt+f1 and then killed the process but … I didn’t. And … ugh. I’m just happy I can use that again.</p>
-
-<p>So. Two small problems, two small solutions. Onwards and upwards. :)</p>]]></content><author><name></name></author><summary type="html"><![CDATA[It’s been a minute! … I found something frustrating about windows, and NixOS, so figured I’d make a post.]]></summary></entry><entry><title type="html">… Nextcloud on Windows can be annoying with spaces in the front of your files sometimes. But you can fix it!</title><link href="http://localhost:4000/2025/07/13/automate-renaming-your-files.html" rel="alternate" type="text/html" title="… Nextcloud on Windows can be annoying with spaces in the front of your files sometimes. But you can fix it!" /><published>2025-07-13T00:00:00-05:00</published><updated>2025-07-13T00:00:00-05:00</updated><id>http://localhost:4000/2025/07/13/automate-renaming-your-files</id><content type="html" xml:base="http://localhost:4000/2025/07/13/automate-renaming-your-files.html"><![CDATA[<p>So I have a 1TB Nextcloud instance. This is what I use to store all my personal files, and back up purchases.
-However, sometimes I download files, and it’s a large bank of things, and half of them are named “ 1.txt” or something.
-Let’s say you buy a large pack of music samples and then they won’t sync to your computer because of this. You know, totally randomly.
-…
-If you’ve used Nextcloud on Windows, you’ll realize that this actually sort of breaks syncing and it shows you a bunch of error messages.
-I hate error messages!</p>
-
-<p>… So I fixed it, in bash. First, find the files:</p>
-
-<p><code class="language-plaintext highlighter-rouge">find . -type f -iname '/ *'</code></p>
-
-<p>Then rename them:</p>
-
-<p><code class="language-plaintext highlighter-rouge">rename 's|/ |/|'</code></p>
-
-<p>Run it with the -n flag to make sure everything won’t break:</p>
-
-<p><code class="language-plaintext highlighter-rouge">find . -type f -iname '/ *' -exec rename -n 's|/ |/|' {} +</code></p>
-
-<p>And then you can just run it for real! And … no errors. The yellow checkmark went to green. That’s all I wanted, haha.
-(And no: I refused to hand edit 1800 files to solve this. Thank god for bash scripting.)</p>]]></content><author><name></name></author><summary type="html"><![CDATA[So I have a 1TB Nextcloud instance. This is what I use to store all my personal files, and back up purchases. However, sometimes I download files, and it’s a large bank of things, and half of them are named “ 1.txt” or something. Let’s say you buy a large pack of music samples and then they won’t sync to your computer because of this. You know, totally randomly. … If you’ve used Nextcloud on Windows, you’ll realize that this actually sort of breaks syncing and it shows you a bunch of error messages. I hate error messages!]]></summary></entry><entry><title type="html">I bought a minibook X as a laptop. It’s tiny. I love it.</title><link href="http://localhost:4000/2025/06/27/the-minibook.html" rel="alternate" type="text/html" title="I bought a minibook X as a laptop. It’s tiny. I love it." /><published>2025-06-27T00:00:00-05:00</published><updated>2025-06-27T00:00:00-05:00</updated><id>http://localhost:4000/2025/06/27/the-minibook</id><content type="html" xml:base="http://localhost:4000/2025/06/27/the-minibook.html"><![CDATA[<p>There’s a thing my friends have noticed about me: I buy laptops. It’s the thing I do, more than anything else, that makes me subject to capitalism. (Well … there’s also phones. However, in the last month I have had no less than three people ask me if I had laptops to give/sell them. So I think laptops is the biggest thing.)
-The last few years have been a bit of a slowdown for me, though, in the ‘switching-laptops-every-three-months’ department. This was because I eventually got a Surface Laptop 7, which I used as my main laptop for a good year.
-It’s fantastic, but there are some software compatibility issues I’ve run into that have made it a little more frustrating than I’d like.</p>
-
-<p>So the Framework Laptop 12 was announced to come out in June, so I made plans to switch to that, mostly because plastic and pink.
-But then (then!) I put a bid on this laptop on eBay called the Chuwi Minibook X. And my bid was accepted, even though it dropped the price from the already on sale price to something that I would feel fine getting just to try it out.</p>
-
-<p>… It arrived here and I’ve used it for about two weeks now! Here are my current thoughts on this laptop, which I would rate as ‘surprisingly good’:</p>
-
-<ul>
-  <li>The keyboard is cramped. It works, it’s the best you could possibly do in the form factor, but still. A little annoying.</li>
-  <li>The touchpad is pretty usable, but has some weird quirks. Sometimes it just misses swipes.</li>
-  <li>It doesn’t open one-handed, but it feels very satisfying to open and close!</li>
-  <li>The touchscreen is … barely good enough, on Windows (it’s worse on Ubuntu). But that’s okay, I didn’t get it for that.</li>
-  <li>The battery life is between 3-7 hours for me, depending on usage: from semi-light games on Windows (3 hours) to text editing on ubuntu with wifi (7).</li>
-  <li>All of the apps I’ve tried work and have been fast! … Except for … davinci resolve. Don’t do that to yourself. But hell, Ableton Live runs on it. Somehow.</li>
-  <li>The case is some sort of metal. It feels great.</li>
-  <li>The screen is good enough and pretty sharp.</li>
-  <li>It’s so small. This whole laptop is lighter and smaller than my 11” ipad pro and magic keyboard, which is what I was bringing with me before.</li>
-  <li>And it was under $200??? How?</li>
-</ul>
-
-<p>As someone who’d spent the last five years looking for a laptop in this form factor - from the surface go, to the lenovo 10w (look it up!!), to just giving up and having an iPad Pro … I’m so happy that I can have a full x86 laptop in this form factor now. :)</p>
-
-<p>It fits in a larger purse!!! Just … really nice.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[There’s a thing my friends have noticed about me: I buy laptops. It’s the thing I do, more than anything else, that makes me subject to capitalism. (Well … there’s also phones. However, in the last month I have had no less than three people ask me if I had laptops to give/sell them. So I think laptops is the biggest thing.) The last few years have been a bit of a slowdown for me, though, in the ‘switching-laptops-every-three-months’ department. This was because I eventually got a Surface Laptop 7, which I used as my main laptop for a good year. It’s fantastic, but there are some software compatibility issues I’ve run into that have made it a little more frustrating than I’d like.]]></summary></entry><entry><title type="html">Oh no! Once again a file is not the right format.</title><link href="http://localhost:4000/2025/05/22/adjusting-wav-files.html" rel="alternate" type="text/html" title="Oh no! Once again a file is not the right format." /><published>2025-05-22T00:00:00-05:00</published><updated>2025-05-22T00:00:00-05:00</updated><id>http://localhost:4000/2025/05/22/adjusting-wav-files</id><content type="html" xml:base="http://localhost:4000/2025/05/22/adjusting-wav-files.html"><![CDATA[<p>Long time no talk! I’ve been good, honestly. Took a long amount of time offline and I don’t hate coding anymore, which is /pretty great/!! Still on sabbatical, but I caught covid.
-… And I made a small technical string to do something I wanted to do, so I figured I would share it … here, which is somewhere.
-Why did I figure it out? … I’ll tell the story real quick.</p>
-
-<p>First: I bought a sample pack from ‘Star Powered Drums’. (They’re an amazing drummer, honestly.) It’s a fun pack, but it didn’t work on my SP-404mk2 because of the format of the file.
-I have been learning how to actually use it after owning it for three years, so … that seems not great. I want to use the samples!
-But how do I convert them? I could drag them all into audacity or reaper and hand-convert them all, but it’s like … 300 samples. God.</p>
-
-<p>… So instead I could look up a bunch of stuff about how the zsh terminal works in MacOS, and write this small snippet:</p>
-
-<p><code class="language-plaintext highlighter-rouge">IFS=$'\n'; for file in $(find . -maxdepth 2 -type f -name \*.wav); do sox $file -b 16 ${file/.wav/-16.wav} rate 44100; done</code></p>
-
-<p>Go to the folder you want, run this, and you should be good. :) I thought it was a little … messy afterwards, so I ran this to delete the non -16 bit wav files:</p>
-
-<p><code class="language-plaintext highlighter-rouge">IFS=$'\n'; for file in $(find . -maxdepth 2 -type f \! \( -name \*16.wav \)); do rm $file; done</code></p>
-
-<p>And I am happily resampling every loop to go +1600% speed so it stretches over four minutes now. :p I hope this helps if you need it!</p>
-
-<p>October update:</p>
-
-<p>To use the ffmpeg codec to convert .mp3 files to .wav programmatically, you can just:</p>
-
-<p><code class="language-plaintext highlighter-rouge">find . -type f | while read i; do j=$(echo $i | sed 's/.mp3/.wav/g'); ffmpeg -i $i $j; done</code></p>
-
-<p>Did I save hundreds of samples in .mp3 accidentally? … … maybe.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Long time no talk! I’ve been good, honestly. Took a long amount of time offline and I don’t hate coding anymore, which is /pretty great/!! Still on sabbatical, but I caught covid. … And I made a small technical string to do something I wanted to do, so I figured I would share it … here, which is somewhere. Why did I figure it out? … I’ll tell the story real quick.]]></summary></entry><entry><title type="html">Sabbatical</title><link href="http://localhost:4000/2025/01/07/sabbatical.html" rel="alternate" type="text/html" title="Sabbatical" /><published>2025-01-07T00:00:00-06:00</published><updated>2025-01-07T00:00:00-06:00</updated><id>http://localhost:4000/2025/01/07/sabbatical</id><content type="html" xml:base="http://localhost:4000/2025/01/07/sabbatical.html"><![CDATA[<p>After a grandparent of mine died near the end of last year, I decided to take a step back from work for a good period (6m-1y, though we’ll see what I can take and how I can rejoin the workforce). And I’ve found that it’s been really, really useful, actually.</p>
-
-<p>I’m somebody who normally works and sleeps and spaces out, and who doesn’t have a ton of time or ability to plan things between those states.
-Between working through grief and figuring out how to actually focus on the things I want to focus on, it feels almost like I’ve been … enabled to work in a more … conscientous way.</p>
-
-<p>It’s interesting, not working and also not rushing to fill my days with things. You learn to be able to slow down, which I’ve never really been able to do. And you learn to … know how to both slow down and speed up, when necessary. Because going at full speed all the time inevitably leads to a crash.</p>
-
-<p>I actually hadn’t touched anything coding really until now - I was tempted to do Advent of Code, and did two days, but ended up stopping because I just need to … rediscover the joy of the process. If you love the process, you can love the work. If you hate the process, it’s all lost.
-And sometimes … you need to rediscover how to enjoy the process.</p>]]></content><author><name></name></author><category term="website" /><summary type="html"><![CDATA[After a grandparent of mine died near the end of last year, I decided to take a step back from work for a good period (6m-1y, though we’ll see what I can take and how I can rejoin the workforce). And I’ve found that it’s been really, really useful, actually.]]></summary></entry><entry><title type="html">Updating Beautiful Jekyll</title><link href="http://localhost:4000/2024/05/26/updating-beautiful-jekyll.html" rel="alternate" type="text/html" title="Updating Beautiful Jekyll" /><published>2024-05-26T00:00:00-05:00</published><updated>2024-05-26T00:00:00-05:00</updated><id>http://localhost:4000/2024/05/26/updating-beautiful-jekyll</id><content type="html" xml:base="http://localhost:4000/2024/05/26/updating-beautiful-jekyll.html"><![CDATA[<p>This website is made with a Jekyll offshoot called ‘Beautiful Jekyll’. This is because I really wanted a static site for security,
-but didn’t like how my website design stuff worked out, especially with the fact that I had to do so much of it by hand.</p>
-
-<p>This is a chill personal blog. I don’t need or want anything fancier, and I wanted to use Github Pages for it (so I don’t have a hosting cost). And I really like how this theme looks!</p>
-
-<p>So I hadn’t updated this since 2018. Didn’t even know how to. There’s a simple ‘how to’ on their website though, it’s basically:
-“Step 1: sync your fork. Step 2: re-add your config files. Step 3: Make sure github pages builds right.”</p>
-
-<p>… So I went through that! No issues really, other than short downtime from github pages needing to sync after I did the update (which deleted my posts and all customizations automatically). If this was more serious I would figure out a way to temporarily show an under construction snapshot, or (more realistically) would just make a new upgrade branch, pull in, and do my changes, and then change there.
-But again: The whole purpose of this is to be very simple to edit and change. So. Nah. :p</p>
-
-<p>If you are looking for a personal site … I’d recommend it honestly!</p>]]></content><author><name></name></author><category term="website" /><summary type="html"><![CDATA[This website is made with a Jekyll offshoot called ‘Beautiful Jekyll’. This is because I really wanted a static site for security, but didn’t like how my website design stuff worked out, especially with the fact that I had to do so much of it by hand.]]></summary></entry><entry><title type="html">Realtime audio on Linux? It’s actually not that bad if you know the secret invocations!</title><link href="http://localhost:4000/2024/02/08/jack-on-linux.html" rel="alternate" type="text/html" title="Realtime audio on Linux? It’s actually not that bad if you know the secret invocations!" /><published>2024-02-08T00:00:00-06:00</published><updated>2024-02-08T00:00:00-06:00</updated><id>http://localhost:4000/2024/02/08/jack-on-linux</id><content type="html" xml:base="http://localhost:4000/2024/02/08/jack-on-linux.html"><![CDATA[<p>So I wrote a post like this about my framework laptop. We are now a year and a half into the future, and I’ve bought windows for that laptop. I couldn’t deal with it.</p>
-
-<p>However, I bought a mac mini for a project. The project didn’t work, but I still have the mac mini, and it’s so old it can’t run a current version of MacOS!</p>
-
-<p>So I wiped MacOS and installed ElementaryOS, but it was such a pain in the ass that I installed Kubuntu instead. And that’s been much better.</p>
-
-<p>Anyways, after installing Kubuntu, it’s been way beter! And I figured … I bet I could set up Jack properly. And my brain wanted to try … and … after some work I got it working! So I wanted to record the steps:</p>
-
-<p>Step 1:
-Install a bunch of stuff.</p>
-
-<p><code class="language-plaintext highlighter-rouge">sudo apt-get install jackd qjackctl pulseaudio-module-jack a2jmidid</code></p>
-
-<p>Step 2:
-Set up qjackctl, and open it. You’ll be starting it before you open your DAW.</p>
-
-<p>Step 3:
-Add this line to qjackctl in options &gt; execute script on startup:</p>
-
-<p><code class="language-plaintext highlighter-rouge">pactl load-module module-jack-sink channels=2; pactl load-module module-jack-source; pacmd set-default-sink jack_out; a2jmidid -e &amp;</code></p>
-
-<p>Step 4:
-Before using your DAW (I use Reaper), open up qjackctl and press start. This will set your sink module, and will enable the alsa midi layer through jack. Everything should now work as you expect!</p>
-
-<p>This loads and deals with the pulseaudio shim (which allows music to be played before and after reaper) and also enables passing midi from alsa into jack.
-Why is it a pulseaudio shim? Look, this works. I don’t wanna think about it anymore.</p>
-
-<p>Hopefully it helps if you are looking for this. :)</p>]]></content><author><name></name></author><category term="music" /><category term="code" /><category term="tech" /><summary type="html"><![CDATA[So I wrote a post like this about my framework laptop. We are now a year and a half into the future, and I’ve bought windows for that laptop. I couldn’t deal with it.]]></summary></entry><entry><title type="html">Assorted thoughts on Windows ARM, starring the Lenovo 10W</title><link href="http://localhost:4000/2024/01/14/windows-arm-in-2024.html" rel="alternate" type="text/html" title="Assorted thoughts on Windows ARM, starring the Lenovo 10W" /><published>2024-01-14T00:00:00-06:00</published><updated>2024-01-14T00:00:00-06:00</updated><id>http://localhost:4000/2024/01/14/windows-arm-in-2024</id><content type="html" xml:base="http://localhost:4000/2024/01/14/windows-arm-in-2024.html"><![CDATA[<p>Hi. I’m mostly writing this because I just bought a laptop that I don’t think anyone else has ever used, because as far as I can tell it has 0 (0) reviews on the internet. The Lenovo 10w. I kind of like it. And using it for the last week has taught me a number of things - about what I want in a laptop, about Windows on ARM, and about how much laptop is enough.</p>
-
-<p>This is the first time I’ve used a 4GB device in a long time. And it’s limited for sure - but it’s not … as limited as I thought, at least after uninstalling some programs (https://github.com/Raphire/Win11Debloat works fine for that). I had to look up arm64 builds of everything I want to use, but I did, and it’s reasonably fast after everything is installed. (I am writing this in Visual Studio Code’s Arm64 build, and uploading with the Git Arm64 beta build provided by dennisameling.) Emulation isn’t fantastic, and sometimes breaks horribly or causes severe lag - but for many apps it’s very usable. For instance, I wanted to use Renoise and Reaper, and I can do both without a ton of issues! Through emulated Arm64! And Zebra, Solana, and Transit all work too! I think it’s pretty incredible that I can have a full audio workstation pipeline going.</p>
-
-<p>Discord thankfully can just be run through a web browser. There are enough ARM programs to get by. And most of what I do at this point … can be done through a web browser. (I did buy Leonardo to do some drawing - no emulated app worked well enough for me, and Paint is Paint. So it goes.)</p>
-
-<p>The benefits of ARM … if you haven’t used an M-series Macbook Air, you may not know. But. The battery life and low heat (no fan!) of it is unparalleled. I had a Surface Go 1, and was thinking about getting the Go 4, but I went this route instead, and I don’t regret it - battery life is almost guaranteed to be twice as long here.</p>
-
-<p>I also used to have a Macbook Air M1. And that’s great too - but they’re just different classes of device. I really like how many different vendors you get with Windows - and the relatively larger amount of freedom you get with Windows, too. So Windows is going to bring that to the ARM space, and … it’s exciting, honestly.</p>
-
-<p>People have been skeptical of Windows on ARM being good in 2024. But it’s been very usable for me - I’ve only run into a few weird bugs, and I think if they iron those out … it feels almost ready. And the experience when not working - when just doing stuff - is great. :)</p>]]></content><author><name></name></author><category term="laptops" /><category term="technology" /><category term="gas" /><summary type="html"><![CDATA[Hi. I’m mostly writing this because I just bought a laptop that I don’t think anyone else has ever used, because as far as I can tell it has 0 (0) reviews on the internet. The Lenovo 10w. I kind of like it. And using it for the last week has taught me a number of things - about what I want in a laptop, about Windows on ARM, and about how much laptop is enough.]]></summary></entry><entry><title type="html">Desktop Linux will never be usable as a stress-free daily driver</title><link href="http://localhost:4000/2023/06/09/desktop-linux-sucks.html" rel="alternate" type="text/html" title="Desktop Linux will never be usable as a stress-free daily driver" /><published>2023-06-09T00:00:00-05:00</published><updated>2023-06-09T00:00:00-05:00</updated><id>http://localhost:4000/2023/06/09/desktop-linux-sucks</id><content type="html" xml:base="http://localhost:4000/2023/06/09/desktop-linux-sucks.html"><![CDATA[<p>I have too many laptops. One of them is a Framework, which I bought solely to use Linux, because I have the freedom to use something else when it’s annoying.
-… But at this point I’m close to just buying a Windows license anyways.
-Basically, the main source of my issues is that the Framework doesn’t have a 1920x1080 screen: it’s 3:2, 2256x1504. 
-So when I use it, I have two choices of non-fractional scaling: 100% and 200%.
-200% is tiny. Text makes me feel like I’m 60, everything is in 6 font.
-100% is massive. It’s the equivalent of 1128x702 - definitely not enough content on the screen.</p>
-
-<p>I was initially using Fedora, the “most supported” distro, and then it somehow wouldn’t let me print. I only print once every three months, but when I need it I actually do need to print things.
-So I went back to Ubuntu and printing worked first try. … But HiDPI was messed up. Slowly I stopped using it because it was annoying and I just didn’t want to troubleshoot the problem.</p>
-
-<p>I only really use Discord and Firefox though, so I loaded up my laptop today, and remembered this issue.
-And I went through figuring out how to do this … it took two hours or so. (This post is also me remembering these settings.)</p>
-
-<p>Firefox was easy, I just had to add this line to my ~/.profile file:</p>
-
-<p><code class="language-plaintext highlighter-rouge">export MOZ_ENABLE_WAYLAND=1</code></p>
-
-<p>On Ubuntu, I decided to just install Discord directly and not use a snap, and then I was able to edit the Desktop setting like this:</p>
-
-<p><code class="language-plaintext highlighter-rouge">sudo vi /usr/share/applications/discord.desktop</code></p>
-
-<p>And then change the exec to this:</p>
-
-<p><code class="language-plaintext highlighter-rouge">Exec=/usr/share/discord/Discord --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-features=WaylandWindowDecorations</code></p>
-
-<p>Yes, it took me two hours to find that. … But it’s absolutely absurd that this is required. These are the types of issues I run into when I try to use Linux … and it’s what makes me confident that the Linux Desktop just isn’t going to happen.</p>
-
-<p>There are always going to be these edge cases - not even very edge-like - that make hardware just … not work as well. It’s inherent to the project.
-I’m considering dual-booting at this point - I just … don’t want to deal with my laptop occasionally breaking. It’s not worth it anymore. And that’s a bummer, but … I guess it is what it is. I’m accepting it at this point.</p>]]></content><author><name></name></author><category term="tech" /><category term="hidpi" /><summary type="html"><![CDATA[I have too many laptops. One of them is a Framework, which I bought solely to use Linux, because I have the freedom to use something else when it’s annoying. … But at this point I’m close to just buying a Windows license anyways. Basically, the main source of my issues is that the Framework doesn’t have a 1920x1080 screen: it’s 3:2, 2256x1504. So when I use it, I have two choices of non-fractional scaling: 100% and 200%. 200% is tiny. Text makes me feel like I’m 60, everything is in 6 font. 100% is massive. It’s the equivalent of 1128x702 - definitely not enough content on the screen.]]></summary></entry></feed>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    
+    <title>welcome to my website. there is content on it. you&apos;re reading it now</title>
+    
+    
+    <description>This website is a virtual proof that I&apos;m awesome</description>
+    
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+      <item>
+        <title>Refreshing my coding ... to beyond where I was.</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          Sometimes going back to the start is what you need to do to get to the future. - 
+          When I was out of my first tech job, because they were bought, I took a python course. This is the spring of 2016. After that, I became basically the ‘Python expert’ in the team that I joined, and wrote a lot of scripts - including an RPM, and a...
+        </description>
+        <pubDate>Thu, 02 Oct 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2025-10-02-python-in-depth/</link>
+        <guid isPermaLink="true">http://localhost:4000/2025-10-02-python-in-depth/</guid>
+      </item>
+    
+      <item>
+        <title>Active and Passive cooling options in Windows are hidden behind a registry flag, because Windows hates its users.</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          :| - 
+          It’s been a minute! … I found something frustrating about windows, and NixOS, so figured I’d make a post. For Windows: in another episode of ‘Posting about bullshit I’ve found out on the internet’, Windows has an option to reduce fan noise built into it. As someone who really, really...
+        </description>
+        <pubDate>Sun, 17 Aug 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2025-08-17-why-is-windows-like-this/</link>
+        <guid isPermaLink="true">http://localhost:4000/2025-08-17-why-is-windows-like-this/</guid>
+      </item>
+    
+      <item>
+        <title>... Nextcloud on Windows can be annoying with spaces in the front of your files sometimes. But you can fix it!</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          Just a little tip! - 
+          So I have a 1TB Nextcloud instance. This is what I use to store all my personal files, and back up purchases. However, sometimes I download files, and it’s a large bank of things, and half of them are named “ 1.txt” or something. Let’s say you buy a large...
+        </description>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2025-07-13-automate-renaming-your-files/</link>
+        <guid isPermaLink="true">http://localhost:4000/2025-07-13-automate-renaming-your-files/</guid>
+      </item>
+    
+      <item>
+        <title>I bought a minibook X as a laptop. It&apos;s tiny. I love it.</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          some frivoloty, for once! - 
+          There’s a thing my friends have noticed about me: I buy laptops. It’s the thing I do, more than anything else, that makes me subject to capitalism. (Well … there’s also phones. However, in the last month I have had no less than three people ask me if I had...
+        </description>
+        <pubDate>Fri, 27 Jun 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2025-06-27-the-minibook/</link>
+        <guid isPermaLink="true">http://localhost:4000/2025-06-27-the-minibook/</guid>
+      </item>
+    
+      <item>
+        <title>Oh no! Once again a file is not the right format.</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          it took me longer than I hoped for this, heh. - 
+          Long time no talk! I’ve been good, honestly. Took a long amount of time offline and I don’t hate coding anymore, which is /pretty great/!! Still on sabbatical, but I caught covid. … And I made a small technical string to do something I wanted to do, so I figured...
+        </description>
+        <pubDate>Thu, 22 May 2025 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2025-05-22-adjusting-wav-files/</link>
+        <guid isPermaLink="true">http://localhost:4000/2025-05-22-adjusting-wav-files/</guid>
+      </item>
+    
+      <item>
+        <title>Sabbatical</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          A step back to take a step forwards. - 
+          After a grandparent of mine died near the end of last year, I decided to take a step back from work for a good period (6m-1y, though we’ll see what I can take and how I can rejoin the workforce). And I’ve found that it’s been really, really useful, actually....
+        </description>
+        <pubDate>Tue, 07 Jan 2025 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2025-01-07-sabbatical/</link>
+        <guid isPermaLink="true">http://localhost:4000/2025-01-07-sabbatical/</guid>
+      </item>
+    
+      <item>
+        <title>Updating Beautiful Jekyll</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          Pretty easy, all in all! - 
+          This website is made with a Jekyll offshoot called ‘Beautiful Jekyll’. This is because I really wanted a static site for security, but didn’t like how my website design stuff worked out, especially with the fact that I had to do so much of it by hand. This is a...
+        </description>
+        <pubDate>Sun, 26 May 2024 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2024-05-26-updating-beautiful-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-05-26-updating-beautiful-jekyll/</guid>
+      </item>
+    
+      <item>
+        <title>Realtime audio on Linux? It&apos;s actually not that bad if you know the secret invocations!</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          
+          So I wrote a post like this about my framework laptop. We are now a year and a half into the future, and I’ve bought windows for that laptop. I couldn’t deal with it. However, I bought a mac mini for a project. The project didn’t work, but I still...
+        </description>
+        <pubDate>Thu, 08 Feb 2024 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2024-02-08-jack-on-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-02-08-jack-on-linux/</guid>
+      </item>
+    
+      <item>
+        <title>Assorted thoughts on Windows ARM, starring the Lenovo 10W</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          I don&apos;t own any desktops. - 
+          Hi. I’m mostly writing this because I just bought a laptop that I don’t think anyone else has ever used, because as far as I can tell it has 0 (0) reviews on the internet. The Lenovo 10w. I kind of like it. And using it for the last week...
+        </description>
+        <pubDate>Sun, 14 Jan 2024 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2024-01-14-windows-arm-in-2024/</link>
+        <guid isPermaLink="true">http://localhost:4000/2024-01-14-windows-arm-in-2024/</guid>
+      </item>
+    
+      <item>
+        <title>Desktop Linux will never be usable as a stress-free daily driver</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          I would like to be able to &quot;read&quot; &quot;text&quot; on HiDPI screens. - 
+          I have too many laptops. One of them is a Framework, which I bought solely to use Linux, because I have the freedom to use something else when it’s annoying. … But at this point I’m close to just buying a Windows license anyways. Basically, the main source of my...
+        </description>
+        <pubDate>Fri, 09 Jun 2023 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2023-06-09-desktop-linux-sucks/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-06-09-desktop-linux-sucks/</guid>
+      </item>
+    
+      <item>
+        <title>The tech you use doesn&apos;t really matter</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          A rose by any other name would be as tangled. - 
+          I’ve been working in tech for a long while now. Over ten years! (That’s seventy in dog years!) And one thing I’ve noticed is that, especially when you immediately get into tech, there’s a lot of concern over the exact tools you’re using. The impact of choosing python over ruby,...
+        </description>
+        <pubDate>Wed, 11 Jan 2023 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2023-01-11-tech-doesnt-matter/</link>
+        <guid isPermaLink="true">http://localhost:4000/2023-01-11-tech-doesnt-matter/</guid>
+      </item>
+    
+      <item>
+        <title>Setting up REAPER on Linux - why, how, and assorted thoughts.</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          I think it&apos;s actually realistic now! - 
+          So I bought a Framework Laptop. https://frame.work/ Mostly this is because I want every tech product in the world (tm). But also, I’ve gotten into a point in my life where I can actually buy things not because they make the most sense, but because I want to. So with...
+        </description>
+        <pubDate>Fri, 05 Aug 2022 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2022-08-05-music-on-linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/2022-08-05-music-on-linux/</guid>
+      </item>
+    
+      <item>
+        <title>jq to sort tags into CSV within AWS output.</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          It sounds harder than it is. - 
+          jq is a command-line processing language for json! AWS has a bunch of CLI commands you can run that output in … pseudo-JSON! How do you sort that? Well … there are a lot of great posts on stackoverflow for it. I’ve gone through and am going to share the...
+        </description>
+        <pubDate>Sat, 10 Jul 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2021-07-10-jq/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-10-jq/</guid>
+      </item>
+    
+      <item>
+        <title>Back into devops, I guess.</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          Money makes the world go &apos;round? - 
+          So. I quit my job, and did the things I said I’d do. But then I also … just kept interviewing, instead of taking a longer break. Which in retrospect seems like somewhat of a mistake. And in the middle of recovering from surgery, I … got another job. I’m...
+        </description>
+        <pubDate>Fri, 09 Jul 2021 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2021-07-09-back-in-devops/</link>
+        <guid isPermaLink="true">http://localhost:4000/2021-07-09-back-in-devops/</guid>
+      </item>
+    
+      <item>
+        <title>New beginnings and what&apos;s next</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          Creation - and dedication. - 
+          I officially quit my job. (Over these next two weeks, I’m transferring knowledge to people and preparing for the time after.) I scheduled my last day to be December 31 - it seems almost artful, to take a break during COVID, and figure out what I want to do from...
+        </description>
+        <pubDate>Fri, 18 Dec 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2020-12-18-new-beginnings/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-12-18-new-beginnings/</guid>
+      </item>
+    
+      <item>
+        <title>On COVID</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          Reasoning with the gaping maw of despair. - 
+          It’s interesting, how things always seem to be for a purpose to humans; how things seem to coalesce to a specific plan at a specific time. We always read into things. As humans we diagnose and spot patterns, and make the chaos of the world make sense. We are constantly...
+        </description>
+        <pubDate>Thu, 08 Oct 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2020-10-08-on-COVID/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-10-08-on-COVID/</guid>
+      </item>
+    
+      <item>
+        <title>A new game!</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          
+          I wrote a new - new game, for Narrascope’s Game Jam (a Narrative Fiction weeklong meeting of people who write and consume it). It’s 15,000 words, and has statistics you tweak by making choices, and various things you can unlock. I made this earlier, but forgot to post about it...
+        </description>
+        <pubDate>Sat, 08 Aug 2020 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2020-08-08-another-game/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-08-08-another-game/</guid>
+      </item>
+    
+      <item>
+        <title>On the game of submitting writing</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          or, We must imagine Sisyphus productive - 
+          I’ve been starting to write medium posts about things, and start to submit posts again. After I graduated college the first time I wanted to be a writer, but I also had something like -$20,000 in my bank account. So that was a trifle unrealistic. But one thing I’m noticing...
+        </description>
+        <pubDate>Fri, 31 Jan 2020 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2020-01-31-submitting-work/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020-01-31-submitting-work/</guid>
+      </item>
+    
+      <item>
+        <title>A new game!</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          existentialism - 
+          I’ve made a new game. 3k words, 2-3 days’ work. probably 10 minutes per playthrough, but I said what I needed to say. Let me know what you think!
+Game Link
+
+        </description>
+        <pubDate>Mon, 18 Nov 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2019-11-18-new-game/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-11-18-new-game/</guid>
+      </item>
+    
+      <item>
+        <title>It&apos;s raining recently, so just a picture of it all. :)</title>
+        
+        <dc:creator><![CDATA[ Iris Felshman ]]></dc:creator>
+        
+        <description>
+          
+          Just a picture I took of the rain, on this beautiful Chicago fall. Respect the rain, and the feeling it makes when it goes through you. &amp;lt;3
+
+
+        </description>
+        <pubDate>Sat, 05 Oct 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2019-10-05-rain_pictures/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019-10-05-rain_pictures/</guid>
+      </item>
+    
+  </channel>
+</rss>
